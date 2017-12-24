@@ -42,7 +42,7 @@ class AppBar extends Component {
             label="DELETE"
             icon={<ActionDelete />}
             style={this.styles.rightMenuButton}
-            onClick={_ => this.setState({ isModalVisible: true })}
+            onClick={() => this.setState({ isModalVisible: true })}
           />
         </div>
       );
@@ -60,7 +60,7 @@ class AppBar extends Component {
           modal={true}
           open={this.state.isModalVisible}
         >
-          Are you sure you want to delete TfJob "test" in namespace "test"?
+          {'Are you sure you want to delete TfJob "test" in namespace "test"?'}
         </Dialog>
       </div>
     );
